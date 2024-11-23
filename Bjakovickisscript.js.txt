@@ -1,0 +1,9 @@
+function navigateTo(formId) {
+    // Скрываем все формы
+    document.querySelectorAll('.form').forEach(form => {
+        form.classList.remove('active');
+    });
+
+    // Показываем выбранную форму
+    document.getElementById(formId).classList.add('active');
+}
